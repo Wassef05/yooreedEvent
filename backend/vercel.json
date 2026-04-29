@@ -1,0 +1,12 @@
+{
+  "buildCommand": "",
+  "outputDirectory": "",
+  "installCommand": "npm install --production=false",
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "/api"
+    }
+  ]
+}
+
