@@ -3,7 +3,6 @@ import api from '../../services/api';
 import { Product } from '../../types';
 import { categoryService } from '../../services/categoryService';
 import { Category } from '../../types';
-import { uploadService } from '../../services/uploadService';
 import { useSeo } from '../../hooks/useSeo';
 
 export const ProductsManagement = () => {
@@ -29,10 +28,6 @@ export const ProductsManagement = () => {
     gravureLaser: false,
     resine: false,
   });
-  const [newMaterial, setNewMaterial] = useState('');
-  const [newPersonalization, setNewPersonalization] = useState('');
-  const [uploadingImages, setUploadingImages] = useState(false);
-  const [uploadingVideos, setUploadingVideos] = useState(false);
   const editorRef = useRef<HTMLDivElement>(null);
 
   useSeo({

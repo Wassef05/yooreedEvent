@@ -15,7 +15,7 @@ export const CategoriesManagement = () => {
     parentId: '',
     image: '',
   });
-  const [uploadingImage, setUploadingImage] = useState(false);
+  const [, setUploadingImage] = useState(false);
 
   useSeo({
     title: 'Gestion Catégories | Administration Yooreed Events',
